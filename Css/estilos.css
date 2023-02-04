@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: purple;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #12c2e9; 
+     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(356, 90%, 64%, 0.678), #c471edef, hsla(191, 86%, 49%, 0.63)), url(../Img/Portada2.jpg);   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(356, 90%, 64%, 0.678), #c471edef,  hsla(191, 86%, 49%, 0.63)), url(../Img/Portada2.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre-nosotros .ful-text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transition: 5s;
+}
+
+.sobre-nosotros .ful-text .parrafo1{
+    width: 90%;
+    max-width: 800px;
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+.sobre-nosotros .ful-text .parrafo1 h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:  hotpink;
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+    padding-right: 130px;
+}
+
+.sobre-nosotros .ful-text span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.imagen-abaut-us{
+    width: 50%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos a{
+    cursor: pointer;
+    color: #af20af;
+    
+}
+
+.sobre-nosotros .contenido-textos a:hover{
+    text-decoration: underline;
+    color: chartreuse;
+    transition: ease 1s;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: blue;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.portafolio{
+    background: white;
+}
+
+
+.portafolio .contenido{
+    display: none;
+}
+
+.portafolio .contenido .diavetes h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #af20af;
+    font-size: 1.4rem;
+    padding: 30px 0;
+}
+
+.portafolio .contenido .diavetes .principal{
+    display: flex;
+    text-align: left;
+    justify-content: left   ;
+    padding: 0 30px;
+}
+
+.portafolio .contenido .diavetes .boton{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #00ff0d;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #00ff0d;
+}
+
+.portafolio .contenido .diavetes .lista{
+    padding-left: 100px;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%,0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    font-size: .9rem;
+    color: white;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #c471ed;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: white;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+/*nosotros*/
+.contenedor{
+    width: 100%;
+    min-width: 320px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.autores .sobreNos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: purple;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px
+
+}
+
+.autores .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.autores .caja-contenedor .caja{
+    flex: 1 1 28rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.autores .caja-contenedor .caja .titulo1{
+    font-size: 2.5rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.autores .caja-contenedor .caja img{
+    width: 200px;
+    left: 75px;
+    box-shadow: 0px 5px 5px rgb(15, 15, 15, .5);
+    border-radius: 150px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.autores .caja-contenedor .caja .texto{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+
+}
+
+
+footer{
+    background: #0afafa;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(91, 164, 248);
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: gray;
+    border-bottom: 3px solid #af20af;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: gray;
+}
+
+.content-foo p i.what{
+    padding-right: 15px;
+    color: green;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.content-foo p i.email{
+    padding-right: 15px;
+    color: #666;
+    font-weight: 400;
+    font-size: 1.3rem;   
+}
+
+
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: blue;
+}
+

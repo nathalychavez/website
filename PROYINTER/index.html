@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina web NathalyCH</title>
+    <link rel="shortcut icon" href="Img/nathalych.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">Acerca de</a>
+            <a href="#portafolio">Dietas</a>
+            <a href="#servicio">servicio</a>
+            <a href="#contacto">contacto</a>
+        </nav>
+        <section id="inicio" class="textos-header">
+            <h1>La Salud Es La Riqueza Real</h1>
+            <h2>más no piezas de oro y plata</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+            style="stroke: none; fill: white;"></path></svg></div>
+    </header>
+    <main>
+        <section id="acerca" class="contenedor sobre-nosotros">
+
+            <div class="ful-text" id="fulTextBox">
+                <div class="parrafo1" id="parrafo1">
+                    <h3>DIETA HIPOCALORICA</h3>
+                    <p>La dieta hipocalórica es un tipo de dieta que restringe la ingesta calórica en el día a día. 
+                    El número de calorías se reduce de forma progresiva, y aporta al cuerpo la energía necesaria para realizar las tareas cotidianas. 
+                    Este tipo de dieta está indicado para aquellas personas que quieran perder peso o tengan sobrepeso y obesidad.
+                    </p>
+                </div>
+                <span onclick="closeText()">X</span>
+            </div>
+
+
+            <div class="ful-text" id="fulTextBox2">
+                <div class="parrafo1" id="parrafo1">
+                    <h3>DIETA HIPERCALORICA</h3>
+                    <p>La dieta hipercalórica, por lo contrario, es un tipo de dieta que aporta una carga energética mayor de la que el cuerpo se necesita.
+                         Está indicada para aquellas personas que quieran aumentar tanto su peso como su masa muscular, 
+                         así como a deportistas y personas que practiquen mucha actividad física a lo largo del día.
+                    </p>
+                </div>
+                <span onclick="closeText2()">X</span>
+            </div>
+
+            
+            <div class="ful-text" id="fulTextBox3">
+                <div class="parrafo1" id="parrafo1">
+                    <h3>DIETA PROTEICA</h3>
+                    <p>La dieta proteica está basada en la ingesta de alimentos con mayor contenido en proteínas, como la carne, el pescado, los lácteos y las legumbres. 
+                        Este tipo de dieta la suelen hacer deportistas o personas que quieren perder peso sin tener mucho conocimiento de nutrición.</p>
+                </div>
+                <span onclick="closeText3()">X</span>
+            </div>
+
+            <div class="ful-text" id="fulTextBox4">
+                <div class="parrafo1" id="parrafo1">
+                    <h3>DIETA DETOX</h3>
+                    <p>Este tipo de dieta se ideó como proceso para depurar el organismo tras un período de comidas copiosas, 
+                        por ejemplo. Se basa en el consumo exclusivo de líquidos durante, al menos, un día completo a la semana.</p>
+                </div>
+                <span onclick="closeText4()">X</span>
+            </div>
+
+            <div class="ful-text" id="fulTextBox5">
+                <div class="parrafo1" id="parrafo1">
+                    <h3>DIETA ALCALINA</h3>
+                    <p>este tipo de dieta se la conoce también como dieta del pH, y ha sido promocionada alegando a sus propiedades “anticáncer”.
+                        La dieta alcalina promete la depuración del organismo, y también defiende que protege contra tumores.</p>
+                </div>
+                <span onclick="closeText5()">X</span>
+            </div>
+
+            <h2 class="titulo">Acerca de</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="Img/alimentacion.png" alt="" class="imagen-abaut-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>¿Que es la Dieta?</h3>
+                    <p>El término dieta se refiere al hábito alimenticio de una persona. 
+                        Existen una gran variedad de dietas, algunas de ellas hacen referencia 
+                        simplemente a un determinado estilo de vida, como la dieta mediterránea o la dieta vegetariana.
+                        Las dietas terapéuticas están diseñadas para personas con determinadas dolencias, como la dieta libre de 
+                        gluten para la enfermedad celíaca o la dieta baja en sodio para las personas que sufren hipertensión.</p>
+                    <h3><span>2</span>Tipos de Dietas</h3>
+                    <a class="clase1" onclick="openText()"><h3>DIETA HIPOCALORICA</h3></a>
+                    <a class="clase2" onclick="openText2()"><h3>DIETA HIPERCALORICA</h3></a>
+                    <a class="clase3" onclick="openText3()"><h3>DIETA PROTEICA</h3></a>
+                    <a class="clase4" onclick="openText4()"><h3>DIETA DETOX</h3></a>
+                    <a class="clase5" onclick="openText5()"><h3>DIETA ALCALINA</h3></a>
+                </div>
+            </div>
+        </section>
+        <section id="portafolio" class="portafolio">
+            <h2 class="titulo">Dietas</h2>
+            <div class="contenedor" id="porta">
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                            <img src="img/img1.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p onclick="abrir()">DIETA PARA PERSONAS CON DIABETES</p>
+                        </div>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="img/img2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p onclick="abrir1()">DIETA PARA LA GASTRITIS</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p onclick="abrir2()">DIETA PARA HIGADO GRASO</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p onclick="abrir3()">DIETA PARA EMBARAZADAS</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p onclick="abrir4()">DIETA PARA PERSONAS CON COLESTEROL</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p onclick="abrir5()">DIETA PARA NIÑOS DE 12 A 14 AÑOS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido" id="contenido">
+                <div class="diavetes">
+                    <h3>¿QUE ES LA DIABETES?</h3>
+                    <p class="principal">
+                        Si tiene diabetes, sus niveles de glucosa (azúcar) en sangre son demasiado altos. La glucosa proviene de los alimentos que consume. 
+                        Las células de su cuerpo necesitan glucosa para obtener energía. Una hormona llamada insulina ayuda a que la glucosa ingrese a las células.
+                        Con la diabetes tipo 1, su cuerpo no produce insulina. Con la diabetes tipo 2, su cuerpo no produce ni utiliza bien la insulina. 
+                        Sin suficiente insulina, la glucosa se acumula en la sangre, causando que aumenten sus niveles de azúcar.
+                    </p>
+                    <h3>¿Qué alimentos debo consumir si tengo diabetes?</h3>
+
+                    <p class="principal">
+                        Comer los alimentos adecuados para la diabetes significa comer una variedad de alimentos saludables de todos los grupos de alimentos:
+                    </p>
+                    <br>
+                    
+                    <div class="lista">
+                        <li>Frutas y vegetales</li>
+                        <li>Granos integrales como trigo integral, arroz integral, cebada, quinua y avena</li>
+                        <li>Proteínas, como carnes magras, pollo, pavo, pescado, huevos, nueces, frijoles, lentejas y tofu</li>
+                        <li>Productos lácteos descremados o bajos en grasa como leche, yogur y queso</li>
+                    </div>
+                        <h3> ¿Qué alimentos debo limitar para controlar mi nivel de azúcar en sangre?</h3>
+                        <p class="principal">Los alimentos y bebidas ricos en carbohidratos que debe limitar incluyen:</p>
+                         <br>
+                        <div class="lista">
+                        <li>Alimentos azucarados como dulces, galletas, pasteles, helados, cereales endulzados y frutas enlatadas con azúcar agregada</li>
+                        <li>Bebidas con azúcares añadidos, como jugos, refrescos regulares y bebidas deportivas o energéticas regulares</li>
+                        <li>Arroz blanco, tortillas, panes y pastas, especialmente los elaborados con harina blanca</li>
+                        <li>Verduras con almidón, como papas blancas, maíz y guisantes</li>
+                        <br>
+                        <button class="boton" onclick="cerrar()"> regresar </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="contenido" id="contenido1">
+                <div class="diavetes">
+                    <h3>¿QUÉ ES LA GASTRITIS?</h3>
+                    <p class="principal">La gastritis es la inflamación del revestimiento del estómago y puede ser aguda, cuando se presenta durante un corto periodo de tiempo, o crónica,
+                         si se prolonga durante meses o años. Esta inflamación del estómago causa, en las personas que lo padecen, dolor en la parte superior del vientre o del estómago, 
+                         náuseas y, en ocasiones, vómitos.
+                        </p>
+                    <h3>Dieta para la gastritis</h3>
+                    <div class="lista">
+                        <li>Zanahorias, arroz, patatas, boniatos, plátanos, manzanas, peras.</li>
+                        <li>Huevo, garbanzos, lentejas</li>
+                        <li>Vapor, hervidos, sopas, purés de verduras, compotas de frutas</li>
+                    </div>
+                    
+                    <h3>Alimentos que debe evitar</h3>
+                    <div class="lista">
+                        <li>Evitar picantes y ácidos</li>
+                        <li>Evitar fritos, gas, exceso de sal</li>
+                        <li>Evitar cambiar de lácteos con fármacos antibióticos.</li>
+                        <br>
+                        <button class="boton" onclick="cerrar1()"> regresar </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="contenido" id="contenido2">
+                <div class="diavetes">
+                    <h3>¿QUE ES HÍGADO GRASO?</h3>
+                    <p class="principal">El hígado graso es una condición sumamente común y uno de los aspectos más relevantes en su manejo es la alimentación. 
+                        La dieta de una persona que tiene esteatosis hepática no alcohólica (EHNA) es fundamental para evitar el progreso de la enfermedad con el consecuente deterioro de su hígado. 
+                        </p>
+                    <h3>Dieta para hígado graso</h3>
+                    <p class="principal">Desayuno</p>
+                    <br>
+                    <div class="lista">
+                        <li>Plato de frutas rojas con yogur natural bajo en grasa y nueces mixtas</li>
+                        <li>Tortilla de dos claras y una yema con espinacas</li>
+                        <li>Una taza de café con leche descremada adicionada con vitamina D</li>
+                    </div>
+
+                    <br>
+                    
+                    <p class="principal">Almuerzo</p>
+                    <br>
+                    <div class="lista">
+                        <li>Crema de frijol negro</li>
+                        <li>Salmón a las brasas con guarnición de brócoli</li>
+                        <li>Ensalada verde con vinagreta a base de aceite de oliva</li>
+                        <li>Una taza de piña natural picada</li>
+                        <br>
+                        <button class="boton" onclick="cerrar2()"> regresar </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="contenido" id="contenido3">
+                <div class="diavetes">
+                    <h3>Dieta para Mujeres Embarazadas</h3>
+                    <div class="lista">
+                        <li>Hidratos de carbono complejos avena, arroz, lentejas, garbanzos</li>
+                        <li> Alimentos con proteínas</li>
+                        <li>Alimentos ricos en ácido fólico espinacas, aguacate, naranja, mandarina</li>
+                        <li>7 nueces diarias por su omega 3</li>
+                        <li>Aceites vírgenes de 1° presión en frio</li>
+                        <li>Tomar infusiones de menta, comino o zumo de piña.</li>
+                        <li>Tomar de primer plato en la comida y en la cena patata, pasta o arroz hervidos y con un poco de aceite de oliva.</li>
+                        <li>Elegir verduras que sean fáciles de digerir como el calabacín, la calabaza, la zanahoria y la judía verde.</li>
+                        <li>Tomar la fruta hervida o al horno.</li>
+                        <li>Evitar las frutas cítricas como el zumo de naranja.</li>
+                        <li>Tomar los lácteos en forma de yogur o queso, evitando beber leche.</li>
+                        <li>Evitar las carnes más grasas y los embutidos.</li>
+                        <li>No comer bollos, productos de pastelería, galletas, etc.</li>
+                        <li>Evitar los alimentos crudos y elegir cocciones que faciliten la digestión: hervido, vapor, papillote, microondas.</li>
+                        <li>Hidratos de carbono complejos avena, arroz, lentejas, garbanzos</li>
+                        <li> Alimentos con proteínas</li>
+                        <li>Alimentos ricos en ácido fólico espinacas, aguacate, naranja, mandarina</li>
+                        <li>7 nueces diarias por su omega 3</li>
+                        <li>Aceites vírgenes de 1° presión en frio</li>
+                        <li>Tomar infusiones de menta, comino o zumo de piña.</li>
+                        <li>Tomar de primer plato en la comida y en la cena patata, pasta o arroz hervidos y con un poco de aceite de oliva.</li>
+                        <li>Elegir verduras que sean fáciles de digerir como el calabacín, la calabaza, la zanahoria y la judía verde.</li>
+                        <li>Tomar la fruta hervida o al horno.</li>
+                        <li>Evitar las frutas cítricas como el zumo de naranja.</li>
+                        <li>Tomar los lácteos en forma de yogur o queso, evitando beber leche.</li>
+                        <li>Evitar las carnes más grasas y los embutidos.</li>
+                        <li>No comer bollos, productos de pastelería, galletas, etc.</li>
+                        <li>Evitar los alimentos crudos y elegir cocciones que faciliten la digestión: hervido, vapor, papillote, microondas.</li>
+                        <br>
+                        <button class="boton" onclick="cerrar3()"> regresar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido" id="contenido4">
+                <div class="diavetes">
+                    <h3>¿QUÉ ES EL COLESTEROL?</h3>
+                    <P class="principal">Su cuerpo necesita algo de colesterol para funcionar bien. Pero si tiene demasiado colesterol en la sangre,
+                         se puede pegar en las paredes de sus arterias, estrechándolas o incluso bloqueándolas.
+                         Esto lo pone en riesgo de enfermedad de las arterias coronarias y otras enfermedades del corazón
+                    </P>
+                    <br>
+                    <div class="lista">
+                        <li> 	Cereales de grano entero como la avena y el salvado de avena</li>
+                        <li> 	Frutas como manzanas, plátanos, naranjas, peras y ciruelas</li>
+                        <li> 	Legumbres como frijoles, lentejas, garbanzos, frijoles de carete y habas</li>
+                        <li> 	Consuma muchas frutas y verduras</li>
+                        <li> 	Coma pescado rico en ácidos grasos omega-3</li>
+                        <li> 	Limite la sal.</li>
+                        <li> 	Limite el alcohol</li>
+                        <br>
+                        <button class="boton" onclick="cerrar4()"> regresar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido" id="contenido5">
+                <div class="diavetes">
+                    <h3>Dieta para Niños de 12 a 14 años</h3>
+                    <P class="principal">Los adolescentes, que se encuentran en el periodo de mayor crecimiento en la vida. Una alimentación saludable les permitirá lograr un peso sano, 
+                        evitar el desarrollo de enfermedades y tener un buen desempeño escolar. Es fundamental que la familia facilite el consumo de alimentos saludables, 
+                        en las colaciones y preparaciones en la casa, evitando las comidas preparadas fuera del hogar como premio.
+                    </P>
+                    <br>
+                    <div class="lista">
+                        <li>Leche</li>
+                        <li>Pan</li>
+                        <li>Yogurt</li>
+                        <li>Fruta</li>
+                        <li>Ensalada de Verduras</li>
+                        <li>Arroz</li>
+                        <li>Carne, Leguminisa(papa)</li>
+                        <li>Pollo o Pavo sin Piel</li>
+                        <li>Pescados</li>
+                        <li>Legumbres</li>
+                        <li>Huevos</li>
+                        <li>Queso</li>
+                        <li>Azúcar</li>
+                        <li>Fideos</li>
+                        <br>
+                        <button class="boton" onclick="cerrar5()"> regresar </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="servicio" class="contenedor autores">
+            <h3 class="sobreNos">Sobre Nosotros</h3>
+            <div class="caja-contenedor">
+                <div class="caja">
+                    <h3 class="titulo1">WILPER ZAPATA</h3>
+                    <img src="img/Wilper.jpeg" >
+                    <p class="texto"> NOMBRES: Wilper David Zapata Caiza<br>EDAD: 21 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                        <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Quinto <br>CORREO: wilper.zapata4609@utc.edu.ec<br>NACIONALIDAD: Ecuatoriano</p>
+                </div>
+    
+                <div class="caja">
+                    <h3 class="titulo1">NATHALY CHAVEZ</h3>
+                    <img src="img/Nathaly.jpeg" >
+                    <p class="texto"> NOMBRES: Nathaly Beatriz Chavez Garcia<br>EDAD: 20 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                        <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Quinto <br>CORREO: nathaly.chavez8393@utc.edu.ec<br>NACIONALIDAD: Ecuatoriana</p>
+                </div>
+    
+                <div class="caja">
+                    <h3 class="titulo1">ANGIE ANCHUNDIA</h3>
+                    <img src="img/AngieA.jpeg" >
+                    <p class="texto"> NOMBRES: Angie Amarilis Anchundia Calero<br>EDAD:20  años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                        <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Quinto <br>CORREO: angie.anchundia7846@utc.edu.ec<br>NACIONALIDAD: Ecuatoriana</p>
+                </div>
+    
+                <div class="caja">
+                    <h3 class="titulo1">GISSELA HINOJOSA</h3>
+                    <img src="img/Giss.jpeg" >
+                    <p class="texto"> NOMBRES: Gissela Yajaira Hinojosa Barreto<br>EDAD: 20 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                        <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Quinto <br>CORREO: gissela.hinojosa5451@utc.edu.ec<br>NACIONALIDAD: Ecuatoriana</p>
+                </div>
+    
+                <div class="caja">
+                    <h3 class="titulo1">NEIDER CHOEZ</h3>
+                    <img src="img/Neider.jpeg" >
+                    <p class="texto"> NOMBRES: Neider Alejandro Choez Valencia<br>EDAD: 21 años <br>UNIVERSIDAD: Universidad Tecnica De Cotopaxi "Extencion La Maná".
+                        <br>CARRERA: Sistemas De Informacion<br>SEMESTRE: Quinto <br>CORREO: neider.choez1428@utc.edu.ec<br>NACIONALIDAD: Ecuatoriano</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>CELULAR</h4>
+                <p><i class="fa-brands fa-whatsapp what"></i>(+593) 979457551</p>
+                <p><i class="fa-brands fa-whatsapp what"></i>(+593) 967744126</p>
+                <p><i class="fa-brands fa-whatsapp what"></i>(+593) 979738394</p>
+                <p><i class="fa-brands fa-whatsapp what"></i>(+593) 990656616</p>
+                <p><i class="fa-brands fa-whatsapp what"></i>(+593) 998670458</p>
+            </div>
+            <div class="content-foo">
+                <h4>CORREO</h4>
+                <p><i class="fa-regular fa-envelope email"></i>nathaly.chavez8393@utc.edu.ec</p>
+                <p><i class="fa-regular fa-envelope email"></i>gissela.hinojosa5451@utc.edu.ec</p>
+                <p><i class="fa-regular fa-envelope email"></i>angie.anchundia7846@utc.edu.ec</p>
+                <p><i class="fa-regular fa-envelope email"></i>wilper.zapata4609@utc.edu.ec</p>
+                <p><i class="fa-regular fa-envelope email"></i>neider.choez1428@utc.edu.ec</p>
+            </div>
+            <div class="content-foo">
+                <h4>UBICACIÓN</h4>
+                <p><i class="fa-solid fa-location-dot " style="padding-right: 15px; font-size: 1.1rem"></i>La Mana - Cotopaxi</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; NathalyCh | NGAWN </h2>
+    </footer>
+    <script>
+        const fulTextBox = document.getElementById("fulTextBox");
+        const fulTextBox2 = document.getElementById("fulTextBox2");
+        const fulTextBox3 = document.getElementById("fulTextBox3");
+        const fulTextBox4 = document.getElementById("fulTextBox4");
+        const fulTextBox5 = document.getElementById("fulTextBox5");
+
+        const contenido = document.getElementById("contenido");
+        const contenido1 = document.getElementById("contenido1");
+        const contenido2 = document.getElementById("contenido2");
+        const contenido3 = document.getElementById("contenido3");
+        const contenido4 = document.getElementById("contenido4");
+        const contenido5 = document.getElementById("contenido5");
+        const porta = document.getElementById("porta");        
+
+        function openText(){
+            fulTextBox.style.display = "flex";
+        }
+
+        function closeText(){
+            fulTextBox.style.display = "none";
+        }
+
+        function openText2(){
+            fulTextBox2.style.display = "flex";
+        }
+
+        function closeText2(){
+            fulTextBox2.style.display = "none";
+        }
+
+        function openText3(){
+            fulTextBox3.style.display = "flex";
+        }
+
+        function closeText3(){
+            fulTextBox3.style.display = "none";
+        }
+
+        function openText4(){
+            fulTextBox4.style.display = "flex";
+        }
+
+        function closeText4(){
+            fulTextBox4.style.display = "none";
+        }
+
+        function openText5(){
+            fulTextBox5.style.display = "flex";
+        }
+
+        function closeText5(){
+            fulTextBox5.style.display = "none";
+        }
+
+        function abrir(){
+            porta.style.display = "none";
+            contenido.style.display = "block";
+        }
+
+        function cerrar(){
+            contenido.style.display = "none";
+            porta.style.display = "flex";
+        }
+
+        function abrir1(){
+            porta.style.display = "none";
+            contenido1.style.display = "block";
+        }
+
+        function cerrar1(){
+            contenido1.style.display = "none";
+            porta.style.display = "flex";
+        }
+
+        function abrir2(){
+            porta.style.display = "none";
+            contenido2.style.display = "block";
+        }
+
+        function cerrar2(){
+            contenido2.style.display = "none";
+            porta.style.display = "flex";
+        }
+
+        function abrir3(){
+            porta.style.display = "none";
+            contenido3.style.display = "block";
+        }
+
+        function cerrar3(){
+            contenido3.style.display = "none";
+            porta.style.display = "flex";
+        }
+
+        function abrir4(){
+            porta.style.display = "none";
+            contenido4.style.display = "block";
+        }
+
+        function cerrar4(){
+            contenido4.style.display = "none";
+            porta.style.display = "flex";
+        }
+
+        function abrir5(){
+            porta.style.display = "none";
+            contenido5.style.display = "block";
+        }
+
+        function cerrar5(){
+            contenido5.style.display = "none";
+            porta.style.display = "flex";
+        }
+    </script>
+</body>
+</html>
